@@ -1,0 +1,34 @@
+[Added Associations]
+text/x-java=code-oss.desktop;visual-studio-code.desktop;
+application/xml=chromium.desktop;code-oss.desktop;visual-studio-code.desktop;
+text/plain=code-oss.desktop;org.xfce.mousepad.desktop;visual-studio-code.desktop;
+application/x-vmware-vm=visual-studio-code.desktop;
+application/pdf=libreoffice-draw.desktop;okularApplication_pdf.desktop;
+image/png=org.xfce.ristretto.desktop;gimp.desktop;org.nomacs.ImageLounge.desktop;ristretto.desktop;org.kde.gwenview.desktop;
+x-scheme-handler/tg=userapp-Telegram Desktop-G3ARA1.desktop;userapp-Telegram Desktop-B0K3A1.desktop;userapp-Telegram Desktop-29W4A1.desktop;userapp-Telegram Desktop-31R6D1.desktop;
+image/jpeg=gimp.desktop;org.xfce.ristretto.desktop;ristretto.desktop;
+application/x-raw-disk-image=org.kde.ark.desktop;code-oss.desktop;
+inode/directory=org.kde.ark.desktop;code-oss.desktop;
+text/html=firefox.desktop;code-oss.desktop;
+application/x-shellscript=code-oss.desktop;
+text/x-python=code-oss.desktop;
+application/javascript=code-oss.desktop;
+application/json=code-oss.desktop;
+text/x-csrc=code-oss.desktop;
+application/x-desktop=org.xfce.mousepad.desktop;
+application/x-ms-dos-executable=wine.desktop;
+
+[Default Applications]
+text/plain=visual-studio-code.desktop
+application/pdf=okularApplication_pdf.desktop
+x-scheme-handler/etcher=balena-etcher-electron.desktop
+image/png=org.kde.gwenview.desktop
+x-scheme-handler/discord-835240968533049424=discord-835240968533049424.desktop
+x-scheme-handler/tg=userapp-Telegram Desktop-31R6D1.desktop
+image/jpeg=ristretto.desktop
+x-scheme-handler/eclipse+command x-scheme-handler/eclipse+mpc=_usr_lib_eclipse_.desktop
+text/html=chromium.desktop
+x-scheme-handler/http=chromium.desktop
+x-scheme-handler/https=chromium.desktop
+x-scheme-handler/about=chromium.desktop
+x-scheme-handler/unknown=chromium.desktop

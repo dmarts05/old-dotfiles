@@ -1,0 +1,14 @@
+export PATH=$HOME/.local/bin:$PATH
+export EDITOR="nvim"
+export TERMINAL="alacritty"
+export XDG_CONFIG_HOME=$HOME/.config
+export XDG_CACHE_HOME=$HOME/.cache
+export XDG_DATA_HOME=$HOME/.local/share
+setxkbmap es
+xset r rate 210 40
+xinput set-prop 'GXTP7863:00 27C6:01E0 Touchpad' 'libinput Tapping Enabled' 1
+xinput set-prop 'GXTP7863:00 27C6:01E0 Touchpad' 'libinput Natural Scrolling Enabled' 1
+lxsession &
+gnome-keyring &
+numlockx &
+picom &

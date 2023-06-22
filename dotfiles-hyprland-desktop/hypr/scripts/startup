@@ -1,0 +1,39 @@
+#!/usr/bin/env bash
+
+## Set cursor theme
+hyprctl setcursor Catppuccin-Mocha-Dark-Cursors 24 &
+
+## Autostart Programs
+
+# Kill already running process
+_ps=(waybar mako mpd xfce-polkit)
+for _prs in "${_ps[@]}"; do
+	if [[ `pidof ${_prs}` ]]; then
+		killall -9 ${_prs}
+	fi
+done
+
+# Fix screensharing
+dbus-update-activation-environment --systemd WAYLAND_DISPLAY XDG_CURRENT_DESKTOP
+
+# Polkit agent
+/usr/lib/xfce-polkit/xfce-polkit &
+
+# Set wallpaper
+swaybg --output '*' --mode fill --image ~/.config/hypr/wallpapers/wallpaper.png &
+
+# Apply themes
+~/.config/hypr/scripts/gtkthemes &
+
+# Lauch notification daemon (mako)
+~/.config/hypr/scripts/notifications &
+
+# Lauch statusbar (waybar)
+~/.config/hypr/scripts/statusbar &
+
+# Fix VirtualBox keyboard input
+gsettings get org.gnome.mutter.wayland xwayland-grab-access-rules
+gsettings set org.gnome.mutter.wayland xwayland-grab-access-rules "['VirtualBox Machine']"
+
+# Start mpd
+exec mpd &

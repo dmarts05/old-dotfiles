@@ -1,0 +1,19 @@
+export PATH=$HOME/.local/bin:$PATH
+export EDITOR="nvim"
+export TERMINAL="alacritty"
+export XDG_CONFIG_HOME=$HOME/.config
+export XDG_CACHE_HOME=$HOME/.cache
+export XDG_DATA_HOME=$HOME/.local/share
+export PATH=~/.npm-global/bin:$PATH
+setxkbmap es
+xset -dpms && xset s off
+xset r rate 210 40
+xrandr --newmode "72Hz"  210.25  1920 2056 2256 2592  1080 1083 1088 1128 -hsync +vsync
+xrandr --addmode HDMI-0 "72Hz"
+xrandr --output HDMI-0 --mode "72Hz"
+xinput set-prop 'Logitech G Pro Gaming Mouse' 'libinput Accel Speed' -0.7
+xinput set-prop 'Logitech G Pro Gaming Mouse' 'libinput Accel Profile Enabled' 0 0
+lxsession &
+/usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1 &
+numlockx &
+picom &
